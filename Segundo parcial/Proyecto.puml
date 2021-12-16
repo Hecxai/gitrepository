@@ -1,0 +1,121 @@
+@startuml
+class Entity.Usuario #lightgreen{
+
+
+}
+class Entity.Diagnostico #lightgreen{
+
+}
+class Entity.Herramientas #lightgreen{
+
+}
+
+class Entity.RegistroPacientes #lightgreen{
+
+}
+
+class Entity.Biblioteca #lightgreen{
+
+}
+
+class Entity.ConsejoSalud #lightgreen{
+
+}
+
+interface Model.IUsuarioModel #skyblue{
+
+}
+
+interface Model.IDiagnosticoModel #skyblue{
+
+}
+interface Model.IHerramientasModel #skyblue{
+
+}
+
+interface Model.IRegistroPacientesModel #skyblue{
+
+}
+
+interface Model.IBibliotecaModel #skyblue{
+
+}
+
+interface Model.IConsejoSaludModel #skyblue{
+
+}
+
+
+class Model.UsuarioModel #pink{
+
+}
+
+class Model.DiagnosticoModel #pink{
+
+}
+class Model.HerramientasModel #pink{
+
+}
+
+class Model.RegistroPacientesModel #pink{
+
+}
+
+class Model.BibliotecaModel #pink{
+
+}
+
+class Model.ConsejoSaludModel #pink{
+
+}
+class Controlador.UsuarioModel #azure{
+
+}
+
+class Controlador.DiagnosticoModel #azure{
+
+}
+class Controlador.HerramientasModel #azure{
+
+}
+
+class Controlador.RegistroPacientesModel #azure{
+
+}
+
+class Controlador.BibliotecaModel #azure{
+
+}
+
+class Controlador.ConsejoSaludControlador #azure{
+
+}
+
+class Vista.Biblioteca{
+
+}
+class Vista.ConsejoSalud{
+
+}
+class Vista.Diagnostico{
+
+}
+class Vista.Herramientas{
+
+}
+class Vista.Principal{
+
+}
+class Vista.RegistroPacientes{
+
+}
+class javax.swing.JFrame
+class javax.swing.JPanel
+
+Vista.Biblioteca --|> javax.swing.JPanel
+Vista.ConsejoSalud --|> javax.swing.JPanel
+Vista.Diagnostico --|> javax.swing.JPanel
+Vista.Herramientas --|> javax.swing.JPanel
+Vista.RegistroPacientes --|> javax.swing.JPanel
+Vista.Principal --|> javax.swing.JFrame
+@enduml
