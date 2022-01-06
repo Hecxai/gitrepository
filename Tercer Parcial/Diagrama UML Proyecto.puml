@@ -1,0 +1,271 @@
+@startuml
+class Entity.Usuario #lightgreen{
+-String Nombre
+-String Contraseña
++set Nombre()
++get Nombre()
++set Contraseña()
++get Contraseña()
+
+}
+class Entity.Diagnostico #lightgreen{
+-String Nombre
+-Integer Peso
+-String Actividad fisica
+-Integer estatura
++set Nombre()
++get Nombre()
++set Peso()
++get Peso()
++set Actividad fisica()
++get Actividad fisica()
++set estatura()
++get estatura()
+}
+class Entity.Herramientas #lightgreen{
+-String Peso
+-String Altura
++set Peso()
++get peso()
++set Altura()
++get Altura()
+}
+
+class Entity.RegistroPacientes #lightgreen{
+-String Nombre
+-String Apellido
+-String Sexo
+-String Domicilio
+-String Ocupacion
+-Integer numIP
+-Integer Telefono
++set Nombre()
++get Nombre()
++set Apellido()
++get Apellido()
++set Sexo()
++get Sexo()
++set Domicilio()
++get Domicilio()
++set Ocupacion()
++get Ocupacion()
++set numIP()
++get numIP()
++set Telefono()
++get Telefono()
+}
+
+class Entity.Biblioteca #lightgreen{
+-String informacion
++set info()
++get info()
+}
+
+class Entity.ConsejoSalud #lightgreen{
+-String Informacion
++set Informacion()
++get Informacion()
+}
+
+interface Model.IUsuarioModel #skyblue{
++Validacion()
+}
+
+interface Model.IDiagnosticoModel #skyblue{
++Antropometria()
++Plan alimenticio()
+}
+interface Model.IHerramientasModel #skyblue{
++Calcula IMC()
++Calcula Calorias()
+}
+
+interface Model.IRegistroPacientesModel #skyblue{
++Registrar paciente()
++Modificar paciente()
++Eliminar paciente()
+}
+
+interface Model.IBibliotecaModel #skyblue{
++res()
++pez()
++pollo()
++ensalada()
+}
+
+interface Model.IConsejoSaludModel #skyblue{
++Informacion()
+}
+
+
+class Model.UsuarioModelimpl #pink{
++Validacion()
+}
+
+class Model.DiagnosticoModelimpl #pink{
++Antropometria()
++Plan alimenticio()
+}
+class Model.HerramientasModelimpl #pink{
++Calcula IMC()
++Calcula Calorias()
+}
+
+class Model.RegistroPacientesModelimpl #pink{
++Registrar paciente()
++Modificar paciente()
++Eliminar paciente()
+}
+
+class Model.BibliotecaModelimpl #pink{
++res()
++pez()
++pollo()
++ensalada()
+}
+
+class Model.ConsejoSaludModelimpl #pink{
++Informacion()
+}
+
+class Controlador.UsuarioCont #azure{
+
+}
+
+class Controlador.DiagnosticoCont #azure{
+
+}
+class Controlador.HerramientasCont  #azure{
+
+}
+
+class Controlador.RegistroPacientesCont  #azure{
+
+}
+
+class Controlador.BibliotecaCont  #azure{
+
+}
+
+class Controlador.ConsejoSaludCont #azure{
+
+}
+
+class Vista.Biblioteca{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class Vista.ConsejoSalud{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class Vista.Diagnostico{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class Vista.Herramientas{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class Vista.Principal{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class Vista.RegistroPacientes{
+-Visibilidad
+-Tamaño
+-Colordefondo
+-Título
+-Icono
++isVisible()
++setVisible()
++getSize()
++setSize()
++getBackground()
++setBackground()
++getTitle()
++setTitle()
++getIconImage()
++setIconImage()
++cerrar()
+}
+class javax.swing.JFrame
+class javax.swing.JPanel
+
+Vista.Biblioteca --|> javax.swing.JPanel
+Vista.ConsejoSalud --|> javax.swing.JPanel
+Vista.Diagnostico --|> javax.swing.JPanel
+Vista.Herramientas --|> javax.swing.JPanel
+Vista.RegistroPacientes --|> javax.swing.JPanel
+Vista.Principal --|> javax.swing.JFrame
+@enduml
